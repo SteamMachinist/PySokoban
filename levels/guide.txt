@@ -1,0 +1,8 @@
+0 - nothing, a filler outside sokoban's reach
+# - a wall
+  - a floor sokoban can stand on
+% - a box
+@ - a target for a box
+& - a box on a target
+S - sokoban, a player
+$ - sokoban on a target
