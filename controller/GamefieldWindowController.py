@@ -1,18 +1,14 @@
 import os
 
-from PyQt5.QtCore import QTimer, QTime, QDateTime, QSize, QModelIndex, QRectF
-
-from gamemodel.game import *
-
-from ui.GamefieldWindowUI import Ui_GamefieldWindow as GamefieldWindowUI
+from PyQt5 import QtSvg, QtCore
+from PyQt5.QtCore import QTimer, QTime, QModelIndex, QRectF
+from PyQt5.QtGui import QPainter, QStandardItemModel, QCloseEvent
+from PyQt5.QtWidgets import QMainWindow, QItemDelegate, QHeaderView, QStyleOptionViewItem
 
 from controller.GameInfoDialogController import GameInfoDialogController as GameInfoDialog
 from controller.WinDialogController import WinDialogController as WinDialog
-
-from PyQt5 import QtSvg, QtCore, QtWidgets
-from PyQt5.QtGui import QMouseEvent, QPainter, QStandardItemModel, QCloseEvent, QIcon, QPixmap, QMovie
-from PyQt5.QtWidgets import QMainWindow, QItemDelegate, QTableWidget, QWidget, QTableWidgetItem, QLabel, QSizePolicy, \
-    QGraphicsView, QHeaderView, QStyleOptionViewItem
+from gamemodel.game import *
+from ui.GamefieldWindowUI import Ui_GamefieldWindow as GamefieldWindowUI
 
 
 class GamefieldWindowController(QMainWindow, GamefieldWindowUI):
